@@ -7,6 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+    <p>Welcome to a  puglets ugly page</p>
+    <p>Her e are some links to get around</p>
+    <nav>
+      <ul>
+        <li>
+          <%= link_to 'home', root_path %>
+        </li>
+        <li>
+          <%= link_to 'gallery', gallery_path %>
+        </li>
+        <li>
+          <%= link_to 'contact', contact_path %>
+        </li>
+      </ul>
+    </nav>
+	</header>
 
 <%= yield %>
 
